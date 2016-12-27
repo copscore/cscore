@@ -12,12 +12,12 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://copscore:Gcbc@789@ds145208.mlab.com:45208/copscore',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'lbuIsB3LxbKTz90yPfdB',
-  masterKey: process.env.MASTER_KEY || 'w2dO6F2xGKaUDcaEXTXl', //Add your master key here. Keep it secret!
-clientKey: '0bD4qcqWpsJfYTxALPax’,
-  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
+  appId: process.env.APP_ID || 'QRdwlLRg4ZE2MRKIz6yEqJYHkTOCkEKoOlfDtjcG',
+  masterKey: process.env.MASTER_KEY || 'lQURSMnhpjVW65s4O0y4rEv31UE1l9cQfXiWlFP5', //Add your master key here. Keep it secret!
+clientKey: 'ZqFx3mHxkRGR0GQIdKNdJSoHFRWR8zjrPjzxqJn5’,
+  serverURL: process.env.SERVER_URL || 'http://copscore.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
